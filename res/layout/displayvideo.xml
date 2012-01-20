@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vidFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="#ff000000"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/vidView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#33333333" />
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vidView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffffffff"
+        android:clickable="true"
+        android:text="Close"
+        android:textColor="#ff000000"
+        android:textSize="30dp" />
+
+</RelativeLayout>

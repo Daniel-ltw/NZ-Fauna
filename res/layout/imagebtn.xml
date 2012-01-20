@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewStub xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dropshadow" >
+    </ImageView>
+    
+    <ImageView
+        android:id="@+id/ibIV"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter" >
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/ibText"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center_horizontal|bottom"
+
+        android:padding="12dp"
+        
+        android:background="#AA000000"
+        android:textColor="#ffffffff" />
+
+</ViewStub>

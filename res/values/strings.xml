@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NZ Fauna</string>
+    <string name="hInvis">invisible</string>
+    <string name="hVis">visible</string>
+
+</resources>

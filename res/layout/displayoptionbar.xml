@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/optionBar"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:addStatesFromChildren="true"
+    android:background="#ffffffff"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:weightSum="5" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/videoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Video"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/soundLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/soundBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Sound"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/soundSelectedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/soundBtn"
+            android:layout_alignLeft="@+id/soundBtn"
+            android:layout_alignRight="@+id/soundBtn"
+            android:layout_alignTop="@+id/soundBtn"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Sound Selected"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/speakBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Speak"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/speakSelectedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/speakBtn"
+            android:layout_alignLeft="@+id/speakBtn"
+            android:layout_alignRight="@+id/speakBtn"
+            android:layout_alignTop="@+id/speakBtn"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Speak Selected"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </RelativeLayout>
+<!-- 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/recordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Record"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/transperantbutton"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

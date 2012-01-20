@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/alphaBtn"
+        android:layout_width="142dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/transperantbutton"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <Button
+        android:id="@+id/speciesBtn"
+        android:layout_width="73dp"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/alphaBtn"
+        android:layout_weight="0.05"
+        android:background="@drawable/transperantbutton"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:fadeScrollbars="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:addStatesFromChildren="true" >
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="true"
+            android:drawingCacheQuality="auto"
+            android:scrollbars="vertical"
+            android:stretchColumns="*" >
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
